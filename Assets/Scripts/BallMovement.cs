@@ -19,14 +19,15 @@ public class BallMovement : MonoBehaviour
             Vector2 paddlePosition = collision.transform.position;
 
             float difference = ballPosition.x - paddlePosition.x;
-            float angle = difference * 4f;
+            float angle = difference * 16f;
 
             Vector2 newDirection = new Vector2(angle, 1).normalized;
             rb.linearVelocity = newDirection * speed;
         }
         else if (collision.gameObject.CompareTag("Wall")) // Rebate nas paredes
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y); 
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y) * 10f; 
+
         }
     }
 }
