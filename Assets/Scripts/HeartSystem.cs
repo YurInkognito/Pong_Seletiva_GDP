@@ -23,6 +23,11 @@ public class HeartSystem : MonoBehaviour
             vida = vidaMaxima;
         }
 
+        if (vida < 0) 
+        {
+            vida = 0;
+        }
+
         for (int i = 0; i < coracao.Length; i++)
         {
             if(i< vida)

@@ -37,22 +37,16 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = new Vector2(Mathf.Clamp(transform.position.x, xMinimo, xMaximo), transform.position.y);
 
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector2.left * velocidadeDoJogador * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow)) 
-        { 
-            transform.Translate(Vector2.right * velocidadeDoJogador * Time.deltaTime); 
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(Vector2.right * velocidadeDoJogador * Time.deltaTime);
         }
 
-        //if (jogador1)
-        //{
-        //    Vector3 mousePosition = Input.mousePosition;
-        //    mousePosition = mainCamera.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 0f));
-        //    transform.position = new Vector3(mousePosition.x, transform.position.y, transform.position.z);
-        //}
     }
 
     private void MoverJogador2()

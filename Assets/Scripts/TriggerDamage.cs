@@ -1,11 +1,20 @@
 using UnityEngine;
 
-public class TriggerDamage : MonoBehaviour
+public class Barrier : MonoBehaviour
 {
-    public HeartSystem heart;
+    public int dano = 1; // Quantidade de dano que a barreira causa ao ser atingida
 
+    [System.Obsolete]
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Pontuacao");
+        if (collision.gameObject.CompareTag("Bola"))
+        {
+            HeartSystem playerLife = FindObjectOfType<HeartSystem>();
+
+            if (playerLife != null)
+            {
+                playerLife.vida -= dano; // Reduz a vida do player
+            }
+        }
     }
 }

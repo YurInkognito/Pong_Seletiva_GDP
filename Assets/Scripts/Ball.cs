@@ -5,7 +5,12 @@ public class Ball : MonoBehaviour
 {
     public float velocidadeDaBola;
 
+    public float direcaoAleatoriaX;
+    public float direcaoAleatoriaY;
+
     public Rigidbody2D oRigidbody2D;
+
+    public AudioSource somDaBola;
 
     void Start()
     {
@@ -14,5 +19,11 @@ public class Ball : MonoBehaviour
     private void MoverBola()
     {
         oRigidbody2D.linearVelocity = new Vector2(velocidadeDaBola, velocidadeDaBola);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collisionInfo)
+    {
+        somDaBola.Play();
+        oRigidbody2D.linearVelocity += new Vector2(direcaoAleatoriaX, direcaoAleatoriaY);
     }
 }
