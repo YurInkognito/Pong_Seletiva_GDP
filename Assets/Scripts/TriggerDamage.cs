@@ -18,9 +18,6 @@ public class TriggerDamage : MonoBehaviour
             if (heart.vida <= 0)
             {
                 gameOverScript.SetActive(true);
-                Cursor.lockState = CursorLockMode.None;
-                Invoke("EnableCursor", 0.1f);
-                Time.timeScale = 0f;
                 return;
             }
             Ball ballScript = collision.gameObject.GetComponent<Ball>();
@@ -39,10 +36,5 @@ public class TriggerDamage : MonoBehaviour
                 }
             }
         }
-    }
-    void EnableCursor()
-    {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 }
