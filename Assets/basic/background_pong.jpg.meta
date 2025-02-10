@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      background_pong_0: -7832969606148627624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

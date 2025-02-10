@@ -19,6 +19,7 @@ public class TriggerDamage : MonoBehaviour
             {
                 gameOverScript.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
+                Invoke("EnableCursor", 0.1f);
                 Time.timeScale = 0f;
                 return;
             }
@@ -38,5 +39,10 @@ public class TriggerDamage : MonoBehaviour
                 }
             }
         }
+    }
+    void EnableCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
