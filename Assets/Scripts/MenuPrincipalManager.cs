@@ -27,7 +27,7 @@ public class MenuPrincipalManager :MonoBehaviour
 
     public void SairJogo()
     {
-        Debug.Log("Sair do Jogo");
+        Debug.Log("Quit");
         Application.Quit();
     }
 }

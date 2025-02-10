@@ -9,6 +9,10 @@ TagManager:
   - Paddle
   - Pontuacao
   - Barreira
+  - Barreira 1
+  - Barreira 2
+  - Inimigo
+  - Player 1
   layers:
   - Default
   - TransparentFX

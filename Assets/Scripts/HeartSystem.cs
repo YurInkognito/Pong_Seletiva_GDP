@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HeartSystem : MonoBehaviour 
+public class HeartSystem : MonoBehaviour
 {
     public int vida;
     public int vidaMaxima;
@@ -18,19 +18,19 @@ public class HeartSystem : MonoBehaviour
 
     void HealthLogic()
     {
-        if(vida > vidaMaxima)
+        if (vida > vidaMaxima)
         {
             vida = vidaMaxima;
         }
 
-        if (vida < 0) 
+        if (vida < 0)
         {
             vida = 0;
         }
 
         for (int i = 0; i < coracao.Length; i++)
         {
-            if(i< vida)
+            if (i < vida)
             {
                 coracao[i].sprite = cheio;
             }

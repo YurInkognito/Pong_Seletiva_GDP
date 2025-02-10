@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour
     }
     private void MoverBola()
     {
-        oRigidbody2D.linearVelocity = new Vector2(velocidadeDaBola, velocidadeDaBola);
+        oRigidbody2D.linearVelocity = new Vector2(5f, 5f);
     }
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)

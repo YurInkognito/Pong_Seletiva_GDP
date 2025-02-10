@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a1bb76140d92564b81a2c8476bc43e0
+guid: 185e9dcb5f7c0c241936103aa5997b21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8615757995864195398
-    second: "Cora\xE7\xE3o - Folkus  - morto_0"
+      213: -7832969606148627624
+    second: background_pong_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cora\xE7\xE3o - Folkus  - morto_0"
+      name: background_pong_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 423
-        height: 193
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abe78c140cdae6880800000000000000
-      internalID: -8615757995864195398
+      spriteID: 8536411e4a3bb4390800000000000000
+      internalID: -7832969606148627624
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Cora\xE7\xE3o - Folkus  - morto_0": -8615757995864195398
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

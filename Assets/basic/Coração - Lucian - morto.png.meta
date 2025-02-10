@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Cora\xE7\xE3o - Lucian - morto_0": 4774164689383820282
+      "Cora\xE7\xE3o - Lucian - morto_1": -2753693791096536982
+      "Cora\xE7\xE3o - Lucian - morto_2": -4962419100348518324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

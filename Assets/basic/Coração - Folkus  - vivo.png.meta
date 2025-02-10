@@ -76,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Cora\xE7\xE3o - Folkus  - vivo_0": 7135881791650397802
+      "Cora\xE7\xE3o - Folkus  - vivo_1": 2288965308865024200
+      "Cora\xE7\xE3o - Folkus  - vivo_10": -7532893191958852587
+      "Cora\xE7\xE3o - Folkus  - vivo_11": -7054153855900357713
+      "Cora\xE7\xE3o - Folkus  - vivo_12": -4971860015847545418
+      "Cora\xE7\xE3o - Folkus  - vivo_13": -7860704692168609872
+      "Cora\xE7\xE3o - Folkus  - vivo_2": -5573988890082929304
+      "Cora\xE7\xE3o - Folkus  - vivo_3": -7626025268774674357
+      "Cora\xE7\xE3o - Folkus  - vivo_4": 3917420253624843365
+      "Cora\xE7\xE3o - Folkus  - vivo_5": 6115801766904502438
+      "Cora\xE7\xE3o - Folkus  - vivo_6": 4919273298795408024
+      "Cora\xE7\xE3o - Folkus  - vivo_7": 147271925368543889
+      "Cora\xE7\xE3o - Folkus  - vivo_8": -4850387718146863429
+      "Cora\xE7\xE3o - Folkus  - vivo_9": 7892308960809239742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
