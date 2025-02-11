@@ -8,9 +8,9 @@ public class MenuPrincipalManager :MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
 
-    public void Jogar() 
+    public void Jogar(string cena) 
     {
-        SceneManager.LoadScene(nomeDoLevelDeJogo);
+        SceneManager.LoadScene(cena);
     }
 
     public void AbrirOpcoes()
