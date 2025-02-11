@@ -7,7 +7,7 @@ public enum STATE
     TYPING
 }
 
-public class DialogueSystem : MonoBehaviour 
+public class DialogueSystem : MonoBehaviour
 {
     public DialogueData dialogueData;
 
@@ -15,17 +15,20 @@ public class DialogueSystem : MonoBehaviour
     bool finished = false;
 
     TypeTextAnimations typeText;
+    DialogueUI dialogueUI;
 
     STATE state;
 
     void Awake()
     {
         typeText = Object.FindFirstObjectByType<TypeTextAnimations>();
+        dialogueUI = FindObjectOfType<DialogueUI>; 
     }
 
     void Start()
     {
         state = STATE.DISABLE;
+        StartDialogue(); 
     }
 
     void Update()
@@ -41,28 +44,50 @@ public class DialogueSystem : MonoBehaviour
                 Typing();
                 break;
         }
+    }
 
-
+    public void StartDialogue()
+    {
+        if (dialogueData != null && dialogueData.talkScript.Count > 0)
+        {
+            state = STATE.WAITING;
+            Next();
+        }
+        else
+        {
+            Debug.LogError("Não há dados de diálogo ou o script de diálogo está vazio.");
+        }
     }
 
     public void Next()
     {
-        typeText.fullText = dialogueData.talkScript[currentText++].text;
+        if (finished) return;
 
-        if (currentText == dialogueData.talkScript.Count) finished = true;
+        if (currentText < dialogueData.talkScript.Count)
+        {
+            typeText.fullText = dialogueData.talkScript[currentText].text;
+            currentText++;
 
-        typeText.StartTyping();
-        state = STATE.TYPING;
+            if (currentText == dialogueData.talkScript.Count) finished = true;
+
+            typeText.StartTyping();
+            state = STATE.TYPING;
+        }
     }
 
     void Waiting()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Next();
+        }
     }
 
     void Typing()
     {
-
+        if (typeText.IsTypingComplete())
+        {
+            state = STATE.WAITING;
+        }
     }
-
 }

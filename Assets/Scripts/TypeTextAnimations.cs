@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -10,24 +9,32 @@ public class TypeTextAnimations : MonoBehaviour
 
     public string fullText;
 
+    private bool isTyping = false;
+
     internal void StartTyping()
     {
-        throw new NotImplementedException();
-    }
+        if (isTyping) return;
 
-    void Start()
-    {
         StartCoroutine(TypeText());
     }
-
     IEnumerator TypeText()
     {
+        isTyping = true;
+
         textObject.text = fullText;
         textObject.maxVisibleCharacters = 0;
-        for(int i = 0; i <= textObject.text.Length; i++)
+
+        for (int i = 0; i <= textObject.text.Length; i++)
         {
             textObject.maxVisibleCharacters = i;
             yield return new WaitForSeconds(typeDelay);
         }
+
+        isTyping = false;
+    }
+
+    public bool IsTypingComplete()
+    {
+        return !isTyping;
     }
 }
