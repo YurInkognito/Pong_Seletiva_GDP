@@ -308,7 +308,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dialogue
+          m_StringArgument: Dialogo1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &200269473
@@ -582,8 +582,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cca9b74e16ec93c4b8d1a95696bbb573, type: 2}
-  m_sharedMaterial: {fileID: 2475444446995086722, guid: cca9b74e16ec93c4b8d1a95696bbb573, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5a95d45e001bf7448985fbad9309b031, type: 2}
+  m_sharedMaterial: {fileID: -1546355677382383181, guid: 5a95d45e001bf7448985fbad9309b031, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -607,8 +607,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -693,7 +693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43, y: -6}
+  m_AnchoredPosition: {x: 110, y: -6}
   m_SizeDelta: {x: 375.12, y: 66.0963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391625509
@@ -716,10 +716,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: continue
+  m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cca9b74e16ec93c4b8d1a95696bbb573, type: 2}
-  m_sharedMaterial: {fileID: 2475444446995086722, guid: cca9b74e16ec93c4b8d1a95696bbb573, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5a95d45e001bf7448985fbad9309b031, type: 2}
+  m_sharedMaterial: {fileID: -1546355677382383181, guid: 5a95d45e001bf7448985fbad9309b031, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -916,12 +916,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0351448be88d404e9338025706231ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullText: Apos uma longa jornada em busca dos segredos mais agridoces das Terras
+  fullText: "Ap\xF3s uma longa jornada em busca dos segredos mais agridoces das Terras
     Tortas, os grandes bruxos de Veldera, Folkus e Lucian se enfrentam em uma batalha
     para conquistar os sentimentos mais bruxosos de Zullie. Para isso, eles precisam
-    controlar uma esfera de energia e joga-la para o lado do campo do adversario,
-    assim estabelecendo sua influencia magica na Floresta Negra. Esse entao e o seu
-    ultimo desafio para conquistar o coracao da Bruxa Zullie.
+    controlar uma esfera de energia e jog\xE1-la para o lado do campo do advers\xE1rio,
+    assim estabelecendo sua influ\xEAncia m\xE1gica na Floresta Negra. Esse ent\xE3o
+    \xE9 o seu \xFAltimo desafio para conquistar o cora\xE7\xE3o da Bruxa Zullie."
   introText: {fileID: 960344505}
   continueButton: {fileID: 200269471}
   textSpeed: 0.05

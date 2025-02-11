@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1877012bd219c4b89bea4e8de5a338, type: 3}
+  m_Name: IntroDialogue
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Ol\xE1 m\xE1gos! Os que os tras aqui"
+    speaker: {fileID: 11400000, guid: 24559717206e633489c69e1e982a0ba6, type: 2}
+  - text: "Eu quero a sua m\xE3o em casamento bruxa Zullie!!"
+    speaker: {fileID: 11400000, guid: 12ddc9df7fe95d244917e3055779502e, type: 2}
+  - text: "N\xE3o, a m\xE3e dela \xE9 minha!!!!!"
+    speaker: {fileID: 11400000, guid: e5d46285435298e45bb9da8973ca2a4f, type: 2}
+  background: {fileID: 6102619973526001967, guid: 2c84babf88ea79e43a118c74313ccddb, type: 3}
+  nextScene: {fileID: 0}
