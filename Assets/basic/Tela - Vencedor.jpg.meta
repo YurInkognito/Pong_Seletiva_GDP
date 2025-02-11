@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9da3741b9cd85734fa9968ba274513ba
+guid: 8f914306665982b4faf041cdfc9946bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3054818768273844229
-    second: Tela - Game Over_0
+      213: -2868185754185317859
+    second: Tela - Vencedor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tela - Game Over_0
+      name: Tela - Vencedor_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf757dfe38a1b95d0800000000000000
-      internalID: -3054818768273844229
+      spriteID: d12c2fbb0482238d0800000000000000
+      internalID: -2868185754185317859
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tela - Game Over_0: -3054818768273844229
+      Tela - Vencedor_0: -2868185754185317859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

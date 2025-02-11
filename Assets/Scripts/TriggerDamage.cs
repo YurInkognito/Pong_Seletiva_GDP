@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerDamage : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class TriggerDamage : MonoBehaviour
     public Vector2 respawnPoint = Vector2.zero;
 
     public HeartSystem heart;
-    public GameObject gameOverScript;
+    public string gameOverSceneName = "GameOverScene";
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,9 +18,12 @@ public class TriggerDamage : MonoBehaviour
 
             if (heart.vida <= 0)
             {
-                gameOverScript.SetActive(true);
+                Debug.Log("Game Over! Carregando cena...");
+                Time.timeScale = 1f;
+                SceneManager.LoadScene(gameOverSceneName);
                 return;
             }
+
             Ball ballScript = collision.gameObject.GetComponent<Ball>();
 
             if (ballScript != null)

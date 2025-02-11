@@ -13,6 +13,8 @@ TagManager:
   - Barreira 2
   - Inimigo
   - Player 1
+  - hud
+  - hud2
   layers:
   - Default
   - TransparentFX
